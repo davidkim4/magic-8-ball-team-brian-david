@@ -42,10 +42,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Magic 8 Ball</h1>
+        <h1>Magic <span id= "number">8</span> Ball</h1>
         <input id="inputBox" type="text" onChange={this.handleChange} />
         <br />
-        <button onClick={this.handleSubmit}>
+        <button id= "button" onClick={this.handleSubmit}>
           Ask the Magic 8 Ball a Question
         </button>
         <p> {this.state.answer} </p>
